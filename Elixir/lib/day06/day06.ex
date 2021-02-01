@@ -60,11 +60,12 @@ defmodule Aoc2015.Day06 do
       {x_start, y_start} = start_point
       {x_end, y_end} = end_point
 
-      for x <- x_start..x_end,
-          y <- y_start..y_end,
-          do:
-            {x, y}
-            |> Enum.reduce(carte, &switch(&2, &1, order))
+      for(
+        x <- x_start..x_end,
+        y <- y_start..y_end,
+        do: {x, y}
+      )
+      |> Enum.reduce(carte, &switch(&2, &1, order))
     end)
     |> Map.values()
     |> Enum.count(&(&1 == true))
@@ -80,11 +81,12 @@ defmodule Aoc2015.Day06 do
       {x_start, y_start} = start_point
       {x_end, y_end} = end_point
 
-      for x <- x_start..x_end,
-          y <- y_start..y_end,
-          do:
-            {x, y}
-            |> Enum.reduce(carte, &dim(&2, &1, order))
+      for(
+        x <- x_start..x_end,
+        y <- y_start..y_end,
+        do: {x, y}
+      )
+      |> Enum.reduce(carte, &dim(&2, &1, order))
     end)
     |> Map.values()
     |> Enum.sum()
