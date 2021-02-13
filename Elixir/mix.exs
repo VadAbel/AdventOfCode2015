@@ -21,6 +21,7 @@ defmodule Aoc2015.MixProject do
   # Run "mix help deps" to learn about dependencies.
   defp deps do
     [
+      {:jason, "~> 1.2"},
       {:nimble_parsec, "~> 1.1"},
       {:benchee, "~> 1.0"}
       # {:dep_from_hexpm, "~> 0.3.0"},
