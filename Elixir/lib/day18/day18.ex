@@ -1,5 +1,5 @@
 defmodule Aoc2015.Day18 do
-  @day 18
+  @day "18"
   @input_file "./lib/day#{@day}/day#{@day}.txt"
 
   @loop 100

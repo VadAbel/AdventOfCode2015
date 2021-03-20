@@ -1,4 +1,7 @@
 defmodule Aoc2015.Day10 do
+  @day "10"
+  @input_file "./lib/day#{@day}/day#{@day}.txt"
+
   def process(list, time \\ 1)
 
   def process(list, time) when time == 0 do
@@ -34,14 +37,14 @@ defmodule Aoc2015.Day10 do
   end
 
   def part1 do
-    File.read!("./lib/day10/day10.txt")
+    File.read!(@input_file)
     |> solution1
-    |> IO.inspect(label: "Day10 Part 1 result ")
+    |> IO.inspect(label: "Day#{@day} Part 1 result ")
   end
 
   def part2 do
-    File.read!("./lib/day10/day10.txt")
+    File.read!(@input_file)
     |> solution2
-    |> IO.inspect(label: "Day10 Part 2 result ")
+    |> IO.inspect(label: "Day#{@day} Part 2 result ")
   end
 end

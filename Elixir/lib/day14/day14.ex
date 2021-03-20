@@ -1,4 +1,7 @@
 defmodule Aoc2015.Day14 do
+  @day "14"
+  @input_file "./lib/day#{@day}/day#{@day}.txt"
+
   import NimbleParsec
 
   @olympic_time 2503
@@ -122,14 +125,14 @@ defmodule Aoc2015.Day14 do
   end
 
   def part1 do
-    File.stream!("./lib/day14/day14.txt")
+    File.stream!(@input_file)
     |> solution1
-    |> IO.inspect(label: "Day14 Part 1 result ")
+    |> IO.inspect(label: "Day#{@day} Part 1 result ")
   end
 
   def part2 do
-    File.stream!("./lib/day14/day14.txt")
+    File.stream!(@input_file)
     |> solution2
-    |> IO.inspect(label: "Day14 Part 2 result ")
+    |> IO.inspect(label: "Day#{@day} Part 2 result ")
   end
 end

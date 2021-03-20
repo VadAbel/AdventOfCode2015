@@ -1,4 +1,7 @@
 defmodule Aoc2015.Day03 do
+  @day 03
+  @input_file "./lib/day#{@day}/day#{@day}.txt"
+
   def move({x, y}, "^"), do: {x, y + 1}
   def move({x, y}, ">"), do: {x + 1, y}
   def move({x, y}, "v"), do: {x, y - 1}
@@ -29,14 +32,14 @@ defmodule Aoc2015.Day03 do
   end
 
   def part1 do
-    File.read!("./lib/day03/day03.txt")
+    File.read!(@input_file)
     |> solution1
-    |> IO.inspect(label: "Day03 Part 1 result : ")
+    |> IO.inspect(label: "Day#{@day} Part 1 result ")
   end
 
   def part2 do
-    File.read!("./lib/day03/day03.txt")
+    File.read!(@input_file)
     |> solution2
-    |> IO.inspect(label: "Day03 Part 2 result : ")
+    |> IO.inspect(label: "Day#{@day} Part 2 result ")
   end
 end

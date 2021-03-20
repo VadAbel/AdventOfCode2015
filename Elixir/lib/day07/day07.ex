@@ -1,4 +1,7 @@
 defmodule Aoc2015.Day07 do
+  @day "07"
+  @input_file "./lib/day#{@day}/day#{@day}.txt"
+
   import NimbleParsec
   use Bitwise
 
@@ -108,14 +111,14 @@ defmodule Aoc2015.Day07 do
   end
 
   def part1 do
-    File.stream!("./lib/day07/day07.txt")
+    File.stream!(@input_file)
     |> solution1
-    |> IO.inspect(label: "Day07 Part 1 result : ")
+    |> IO.inspect(label: "Day#{@day} Part 1 result ")
   end
 
   def part2 do
-    File.stream!("./lib/day07/day07.txt")
+    File.stream!(@input_file)
     |> solution2
-    |> IO.inspect(label: "Day07 Part 2 result : ")
+    |> IO.inspect(label: "Day#{@day} Part 2 result ")
   end
 end

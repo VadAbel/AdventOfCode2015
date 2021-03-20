@@ -1,4 +1,7 @@
 defmodule Aoc2015.Day04 do
+  @day "04"
+  @input_file "./lib/day#{@day}/day#{@day}.txt"
+
   def find_number(input, nb_zero, number \\ 1) do
     hash = :crypto.hash(:md5, input <> Integer.to_string(number)) |> Base.encode16()
 
@@ -18,14 +21,14 @@ defmodule Aoc2015.Day04 do
   end
 
   def part1 do
-    File.read!("./lib/day04/day04.txt")
+    File.read!(@input_file)
     |> solution1
-    |> IO.inspect(label: "Day04 Part 1 result : ")
+    |> IO.inspect(label: "Day#{@day} Part 1 result ")
   end
 
   def part2 do
-    File.read!("./lib/day04/day04.txt")
+    File.read!(@input_file)
     |> solution2
-    |> IO.inspect(label: "Day04 Part 2 result : ")
+    |> IO.inspect(label: "Day#{@day} Part 2 result ")
   end
 end

@@ -1,4 +1,7 @@
 defmodule Aoc2015.Day05 do
+  @day "05"
+  @input_file "./lib/day#{@day}/day#{@day}.txt"
+
   @reg_vowel ~r/[aeiou]/
   @reg_dual_char ~r/([a-z])\1/
   @forbidden_string ["ab", "cd", "pq", "xy"]
@@ -33,14 +36,14 @@ defmodule Aoc2015.Day05 do
   end
 
   def part1 do
-    File.stream!("./lib/day05/day05.txt")
+    File.stream!(@input_file)
     |> solution1
-    |> IO.inspect(label: "Day05 Part 1 result : ")
+    |> IO.inspect(label: "Day#{@day} Part 1 result ")
   end
 
   def part2 do
-    File.stream!("./lib/day05/day05.txt")
+    File.stream!(@input_file)
     |> solution2
-    |> IO.inspect(label: "Day05 Part 2 result : ")
+    |> IO.inspect(label: "Day#{@day} Part 2 result ")
   end
 end

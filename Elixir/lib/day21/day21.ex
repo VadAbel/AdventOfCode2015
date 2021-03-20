@@ -1,5 +1,5 @@
 defmodule Aoc2015.Day21 do
-  @day 21
+  @day "21"
   @input_file "./lib/day#{@day}/day#{@day}.txt"
 
   @player_life 100

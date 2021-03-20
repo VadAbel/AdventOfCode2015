@@ -1,4 +1,7 @@
 defmodule Aoc2015.Day08 do
+  @day "08"
+  @input_file "./lib/day#{@day}/day#{@day}.txt"
+
   def decode(""), do: ""
   def decode(<<?\\, ?\\, tail::binary>>), do: <<?\\>> <> decode(tail)
   def decode(<<?\\, ?\", tail::binary>>), do: <<?\">> <> decode(tail)
@@ -26,14 +29,14 @@ defmodule Aoc2015.Day08 do
   end
 
   def part1 do
-    File.stream!("./lib/day08/day08.txt")
+    File.stream!(@input_file)
     |> solution1
-    |> IO.inspect(label: "Day08 Part 1 result ")
+    |> IO.inspect(label: "Day#{@day} Part 1 result ")
   end
 
   def part2 do
-    File.stream!("./lib/day08/day08.txt")
+    File.stream!(@input_file)
     |> solution2
-    |> IO.inspect(label: "Day08 Part 2 result ")
+    |> IO.inspect(label: "Day#{@day} Part 2 result ")
   end
 end

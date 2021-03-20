@@ -1,4 +1,7 @@
 defmodule Aoc2015.Day06 do
+  @day "06"
+  @input_file "./lib/day#{@day}/day#{@day}.txt"
+
   import NimbleParsec
 
   order =
@@ -286,33 +289,33 @@ defmodule Aoc2015.Day06 do
   end
 
   def part1_1 do
-    File.stream!("./lib/day06/day06.txt")
+    File.stream!(@input_file)
     |> solution1
-    |> IO.inspect(label: "Day06 Part 1 result : ")
+    |> IO.inspect(label: "Day#{@day} Part 1 result ")
   end
 
   def part1_2 do
-    File.stream!("./lib/day06/day06.txt")
+    File.stream!(@input_file)
     |> solution1_2
-    |> IO.inspect(label: "Day06 Part 1 result : ")
+    |> IO.inspect(label: "Day#{@day} Part 1 result ")
   end
 
   def part1_3 do
-    File.stream!("./lib/day06/day06.txt")
+    File.stream!(@input_file)
     |> solution1_3
-    |> IO.inspect(label: "Day06 Part 1 result : ")
+    |> IO.inspect(label: "Day#{@day} Part 1 result ")
   end
 
   def part1_4 do
-    File.stream!("./lib/day06/day06.txt")
+    File.stream!(@input_file)
     |> solution1_4
-    |> IO.inspect(label: "Day06 Part 1 result : ")
+    |> IO.inspect(label: "Day#{@day} Part 1 result ")
   end
 
   def part1_5 do
-    File.stream!("./lib/day06/day06.txt")
+    File.stream!(@input_file)
     |> solution1_5
-    |> IO.inspect(label: "Day06 Part 1 result : ")
+    |> IO.inspect(label: "Day#{@day} Part 1 result ")
   end
 
   def part1 do
@@ -326,33 +329,33 @@ defmodule Aoc2015.Day06 do
   end
 
   def part2_1 do
-    File.stream!("./lib/day06/day06.txt")
+    File.stream!(@input_file)
     |> solution2_1
-    |> IO.inspect(label: "Day06 Part 2 result : ")
+    |> IO.inspect(label: "Day#{@day} Part 2 result ")
   end
 
   def part2_2 do
-    File.stream!("./lib/day06/day06.txt")
+    File.stream!(@input_file)
     |> solution2_2
-    |> IO.inspect(label: "Day06 Part 2 result : ")
+    |> IO.inspect(label: "Day#{@day} Part 2 result ")
   end
 
   def part2_3 do
-    File.stream!("./lib/day06/day06.txt")
+    File.stream!(@input_file)
     |> solution2_3
-    |> IO.inspect(label: "Day06 Part 2 result : ")
+    |> IO.inspect(label: "Day#{@day} Part 2 result ")
   end
 
   def part2_4 do
-    File.stream!("./lib/day06/day06.txt")
+    File.stream!(@input_file)
     |> solution2_4
-    |> IO.inspect(label: "Day06 Part 2 result : ")
+    |> IO.inspect(label: "Day#{@day} Part 2 result ")
   end
 
   def part2_5 do
-    File.stream!("./lib/day06/day06.txt")
+    File.stream!(@input_file)
     |> solution2_5
-    |> IO.inspect(label: "Day06 Part 2 result : ")
+    |> IO.inspect(label: "Day#{@day} Part 2 result ")
   end
 
   def part2 do

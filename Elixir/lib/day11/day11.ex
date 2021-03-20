@@ -1,4 +1,7 @@
 defmodule Aoc2015.Day11 do
+  @day "11"
+  @input_file "./lib/day#{@day}/day#{@day}.txt"
+
   def is_valid_password(password),
     do: include_straight(password) && has_valid_char(password) && has_two_pair(password)
 
@@ -48,14 +51,14 @@ defmodule Aoc2015.Day11 do
   end
 
   def part1 do
-    File.read!("./lib/day11/day11.txt")
+    File.read!(@input_file)
     |> solution1
-    |> IO.inspect(label: "Day11 Part 1 result ")
+    |> IO.inspect(label: "Day#{@day} Part 1 result ")
   end
 
   def part2 do
-    File.read!("./lib/day11/day11.txt")
+    File.read!(@input_file)
     |> solution2
-    |> IO.inspect(label: "Day11 Part 2 result ")
+    |> IO.inspect(label: "Day#{@day} Part 2 result ")
   end
 end

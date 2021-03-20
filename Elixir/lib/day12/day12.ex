@@ -1,4 +1,7 @@
 defmodule Aoc2015.Day12 do
+  @day "12"
+  @input_file "./lib/day#{@day}/day#{@day}.txt"
+
   def parse(obj) when is_map(obj), do: Map.values(obj) |> parse()
   def parse(obj) when is_list(obj), do: Enum.map(obj, &parse(&1))
   def parse(obj) when is_integer(obj), do: obj
@@ -33,14 +36,14 @@ defmodule Aoc2015.Day12 do
   end
 
   def part1 do
-    File.read!("./lib/day12/day12.txt")
+    File.read!(@input_file)
     |> solution1
-    |> IO.inspect(label: "Day12 Part 1 result ")
+    |> IO.inspect(label: "Day#{@day} Part 1 result ")
   end
 
   def part2 do
-    File.read!("./lib/day12/day12.txt")
+    File.read!(@input_file)
     |> solution2
-    |> IO.inspect(label: "Day12 Part 2 result ")
+    |> IO.inspect(label: "Day#{@day} Part 2 result ")
   end
 end

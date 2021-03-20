@@ -1,4 +1,7 @@
 defmodule Aoc2015.Day09 do
+  @day "09"
+  @input_file "./lib/day#{@day}/day#{@day}.txt"
+
   import NimbleParsec
 
   distance =
@@ -61,14 +64,14 @@ defmodule Aoc2015.Day09 do
   end
 
   def part1 do
-    File.stream!("./lib/day09/day09.txt")
+    File.stream!(@input_file)
     |> solution1
-    |> IO.inspect(label: "Day09 Part 1 result ")
+    |> IO.inspect(label: "Day#{@day} Part 1 result ")
   end
 
   def part2 do
-    File.stream!("./lib/day09/day09.txt")
+    File.stream!(@input_file)
     |> solution2
-    |> IO.inspect(label: "Day09 Part 2 result ")
+    |> IO.inspect(label: "Day#{@day} Part 2 result ")
   end
 end

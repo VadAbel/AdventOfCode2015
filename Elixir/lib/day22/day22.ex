@@ -1,5 +1,5 @@
 defmodule Aoc2015.Day22 do
-  @day 22
+  @day "22"
   @input_file "./lib/day#{@day}/day#{@day}.txt"
 
   @spells [

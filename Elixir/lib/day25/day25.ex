@@ -1,5 +1,5 @@
 defmodule Aoc2015.Day25 do
-  @day 25
+  @day "25"
   @input_file "./lib/day#{@day}/day#{@day}.txt"
 
   def next_code(code), do: rem(code * 252_533, 33_554_393)
