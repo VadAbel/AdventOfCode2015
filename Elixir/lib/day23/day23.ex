@@ -84,7 +84,10 @@ defmodule Aoc2015.Day23 do
   end
 
   def solution2(input) do
-    input
+    instructions = parse(input)
+    registers = %{a: 1, b: 0, ip: 0}
+
+    process(registers, instructions)
   end
 
   def part1 do
