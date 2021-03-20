@@ -41,7 +41,13 @@ defmodule Aoc2015.Day24 do
   end
 
   def solution2(input) do
-    input
+    packages = parse(input)
+    target_weight = Enum.sum(packages) / 4
+
+    Enum.map(packages, &[&1])
+    |> add_package(target_weight, packages)
+    |> Enum.map(fn x -> Enum.reduce(x, &(&1 * &2)) end)
+    |> Enum.min()
   end
 
   def part1 do
