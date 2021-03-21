@@ -1,6 +1,6 @@
 defmodule Aoc2015.Day16 do
   @day "16"
-  @input_file "./lib/day#{@day}/day#{@day}.txt"
+  @input_file "../inputs/day#{@day}.txt"
 
   import NimbleParsec
 

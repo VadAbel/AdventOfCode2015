@@ -1,6 +1,6 @@
 defmodule Aoc2015.Day20 do
   @day "20"
-  @input_file "./lib/day#{@day}/day#{@day}.txt"
+  @input_file "../inputs/day#{@day}.txt"
 
   def present_house(presents_target, house \\ 1) do
     sqrt_house = house |> :math.sqrt() |> trunc()

@@ -1,6 +1,6 @@
 defmodule Aoc2015.Day22 do
   @day "22"
-  @input_file "./lib/day#{@day}/day#{@day}.txt"
+  @input_file "../inputs/day#{@day}.txt"
 
   @spells [
     %{name: "Magic Missile", cost: 53, damage: 4, heal: 0, armor: 0, mana: 0, turn: 1},

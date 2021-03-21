@@ -1,6 +1,6 @@
 defmodule Aoc2015.Day03 do
   @day 03
-  @input_file "./lib/day#{@day}/day#{@day}.txt"
+  @input_file "../inputs/day#{@day}.txt"
 
   def move({x, y}, "^"), do: {x, y + 1}
   def move({x, y}, ">"), do: {x + 1, y}

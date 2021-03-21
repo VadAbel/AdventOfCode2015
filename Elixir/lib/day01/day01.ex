@@ -1,6 +1,6 @@
 defmodule Aoc2015.Day01 do
   @day "01"
-  @input_file "./lib/day#{@day}/day#{@day}.txt"
+  @input_file "../inputs/day#{@day}.txt"
 
   defp marche("("), do: 1
   defp marche(")"), do: -1

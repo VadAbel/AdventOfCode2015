@@ -1,6 +1,6 @@
 defmodule Aoc2015.Day04 do
   @day "04"
-  @input_file "./lib/day#{@day}/day#{@day}.txt"
+  @input_file "../inputs/day#{@day}.txt"
 
   def find_number(input, nb_zero, number \\ 1) do
     hash = :crypto.hash(:md5, input <> Integer.to_string(number)) |> Base.encode16()

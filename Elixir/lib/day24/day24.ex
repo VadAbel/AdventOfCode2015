@@ -1,6 +1,6 @@
 defmodule Aoc2015.Day24 do
   @day "24"
-  @input_file "./lib/day#{@day}/day#{@day}.txt"
+  @input_file "../inputs/day#{@day}.txt"
 
   def parse(input) do
     String.split(input, "\n", trim: true)

@@ -1,6 +1,6 @@
 defmodule Aoc2015.Day10 do
   @day "10"
-  @input_file "./lib/day#{@day}/day#{@day}.txt"
+  @input_file "../inputs/day#{@day}.txt"
 
   def process(list, time \\ 1)
 

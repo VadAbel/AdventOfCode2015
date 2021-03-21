@@ -1,6 +1,6 @@
 defmodule Aoc2015.Day11 do
   @day "11"
-  @input_file "./lib/day#{@day}/day#{@day}.txt"
+  @input_file "../inputs/day#{@day}.txt"
 
   def is_valid_password(password),
     do: include_straight(password) && has_valid_char(password) && has_two_pair(password)

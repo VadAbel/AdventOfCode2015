@@ -1,6 +1,6 @@
 defmodule Aoc2015.Day02 do
   @day "02"
-  @input_file "./lib/day#{@day}/day#{@day}.txt"
+  @input_file "../inputs/day#{@day}.txt"
 
   def paquet([l, w, h]) do
     papier = 2 * l * w + 2 * w * h + 2 * h * l

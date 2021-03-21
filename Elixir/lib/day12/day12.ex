@@ -1,6 +1,6 @@
 defmodule Aoc2015.Day12 do
   @day "12"
-  @input_file "./lib/day#{@day}/day#{@day}.txt"
+  @input_file "../inputs/day#{@day}.txt"
 
   def parse(obj) when is_map(obj), do: Map.values(obj) |> parse()
   def parse(obj) when is_list(obj), do: Enum.map(obj, &parse(&1))

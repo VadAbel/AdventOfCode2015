@@ -1,6 +1,6 @@
 defmodule Aoc2015.Day08 do
   @day "08"
-  @input_file "./lib/day#{@day}/day#{@day}.txt"
+  @input_file "../inputs/day#{@day}.txt"
 
   def decode(""), do: ""
   def decode(<<?\\, ?\\, tail::binary>>), do: <<?\\>> <> decode(tail)

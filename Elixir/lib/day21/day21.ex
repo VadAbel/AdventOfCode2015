@@ -1,6 +1,6 @@
 defmodule Aoc2015.Day21 do
   @day "21"
-  @input_file "./lib/day#{@day}/day#{@day}.txt"
+  @input_file "../inputs/day#{@day}.txt"
 
   @player_life 100
   @empty_stat %{cost: 0, damage: 0, armor: 0}

@@ -1,6 +1,6 @@
 defmodule Aoc2015.Day05 do
   @day "05"
-  @input_file "./lib/day#{@day}/day#{@day}.txt"
+  @input_file "../inputs/day#{@day}.txt"
 
   @reg_vowel ~r/[aeiou]/
   @reg_dual_char ~r/([a-z])\1/

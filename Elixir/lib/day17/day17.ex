@@ -1,6 +1,6 @@
 defmodule Aoc2015.Day17 do
   @day "17"
-  @input_file "./lib/day#{@day}/day#{@day}.txt"
+  @input_file "../inputs/day#{@day}.txt"
 
   @max_container 150
 
